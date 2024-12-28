@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="adf3ed82-a3a8-46b0-ac3e-cbc1db4eb50f"  >
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="5fb35128-60ae-4499-acb3-7ed6b8f12290"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(5.49 0 0 5.49 539.69 563.73)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(51,51,51); fill-rule: evenodd; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-87.14, -49)" d="M 153.206 4.08176 L 7.84074 39.278 C 5.01596 39.9619 3.28047 42.8063 3.96441 45.631 L 14.7188 90.0483 C 15.4027 92.873 18.2471 94.6085 21.0719 93.9246 L 166.437 58.7284 C 169.262 58.0445 170.998 55.2001 170.314 52.3753 L 159.559 7.95809 C 158.875 5.13331 156.031 3.39782 153.206 4.08176 Z M 7.44967 37.6628 C 3.73286 38.5627 1.44932 42.3053 2.34924 46.0221 L 13.1036 90.4393 C 14.0036 94.1562 17.7462 96.4397 21.463 95.5398 L 166.828 60.3436 C 170.545 59.4437 172.829 55.7011 171.929 51.9842 L 161.174 7.56702 C 160.275 3.85021 156.532 1.56667 152.815 2.46659 L 7.44967 37.6628 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(0.97 -0.23 0.23 0.97 540 571.29)" style="" id="9f7341bd-0acc-485b-8ba0-53ea7e167f68"  >
+		<text xml:space="preserve" font-family="Lato" font-size="117" font-style="normal" font-weight="400" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(51,51,51); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-369.37" y="36.75" >HackSprint&apos;25</tspan></text>
+</g>
+</svg>
