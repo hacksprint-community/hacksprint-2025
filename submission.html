@@ -16,64 +16,97 @@
             max-width: 900px;
             margin: 40px auto;
             padding: 20px;
-            background: #ffffff;
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
             border-radius: 12px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
         .submission-section h2 {
             text-align: center;
-            color: #007BFF;
-            font-size: 2rem;
-            margin-bottom: 20px;
+            color: #0056b3;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
-        .round {
-            margin: 20px 0;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: #f8f9fa;
-        }
-        .round h3 {
-            color: #007BFF;
-            font-size: 1.5rem;
-        }
-        .round p {
-            color: #555;
-            margin: 10px 0;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-        .submit-btn {
-            display: inline-block;
-            margin: 10px 0;
-            padding: 12px 25px;
-            background-color: #ec653b;
+        .home-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 10px 20px;
+            background-color: #0056b3;
             color: #fff;
             font-size: 1rem;
             text-decoration: none;
             border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .home-btn:hover {
+            background-color: #003d80;
+            transform: translateY(-3px);
+        }
+        .round {
+            margin: 25px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #f4f6f8;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .round:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .round h3 {
+            color: #0056b3;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        .round p {
+            color: #555;
+            margin: 10px 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .submit-btn {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 14px 30px;
+            background-color: #ec653b;
+            color: #fff;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 10px;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .submit-btn:hover {
             background-color: #ec653b;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
         @media (max-width: 768px) {
             .submission-section {
                 margin: 20px;
                 padding: 15px;
             }
+            .home-btn {
+                top: 10px;
+                left: 10px;
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
             .round h3 {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
             }
             .submit-btn {
-                font-size: 0.9rem;
-                padding: 10px 20px;
+                font-size: 1rem;
+                padding: 12px 25px;
             }
         }
         @media (max-width: 480px) {
             .round p {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             .submit-btn {
                 width: 100%;
@@ -85,16 +118,18 @@
 <body>
 
 <section class="submission-section">
+    <a href="index.html" class="home-btn">Home</a>
     <h2>HackSprint Submissions</h2>
 
     <div class="round">
-        <h3>Round One</h3>
+        <h3>Round 1</h3>
         <p>Submit your initial project ideas and wireframes. Ensure your submission highlights the problem statement and proposed solution.</p>
+        <p><strong>Note:</strong><em> The submission portal will be live for taking responses for <strong>Round 1 at 6 PM today</strong>.</em> </p>
         <a href="#" class="submit-btn">Submit for Round One</a>
     </div>
 
     <div class="round">
-        <h3>Round Two</h3>
+        <h3>Round 2</h3>
         <p>Submit your developed project, including source code, documentation, and a short demo video showcasing the functionality.</p>
         <a href="#" class="submit-btn">Submit for Round Two</a>
     </div>
