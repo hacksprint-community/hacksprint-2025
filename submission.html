@@ -59,7 +59,7 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
         }
         .round h3 {
-            color: #0056b3;
+            color: #ec653b;
             font-size: 1.8rem;
             margin-bottom: 15px;
         }
@@ -68,6 +68,16 @@
             margin: 10px 0;
             font-size: 1.1rem;
             line-height: 1.8;
+        }
+        .round-one-highlight {
+            animation: flashing 1s infinite;
+            border: 2px solid #ff0000;
+            padding: 18px;
+        }
+        @keyframes flashing {
+            0% { background-color: #ffcccc; }
+            50% { background-color: #ffe6e6; }
+            100% { background-color: #ffcccc; }
         }
         .submit-btn {
             display: inline-block;
@@ -81,7 +91,7 @@
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .submit-btn:hover {
-            background-color: #ec653b;
+            background-color: #003d80;
             transform: translateY(-3px);
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
         }
@@ -121,11 +131,11 @@
     <a href="index.html" class="home-btn">Home</a>
     <h2>HackSprint Submissions</h2>
 
-    <div class="round">
+    <div class="round round-one-highlight">
         <h3>Round 1</h3>
         <p>Submit your initial project ideas and wireframes. Ensure your submission highlights the problem statement and proposed solution.</p>
-        <p><strong>Note:</strong><em> The submission portal will be live for taking responses for <strong>Round 1 at 6 PM today</strong>.</em> </p>
-        <a href="#" class="submit-btn">Submit for Round One</a>
+        <p><strong>Note:</strong> <strong><em> Round 1 submissions are now open submit your problem statements !!! <br>Deadline 03 Jan (9:00 AM)</em></strong></p>
+        <a href="https://forms.gle/yKDETDDV3t3DMsZG8" class="submit-btn">Submit for Round One</a>
     </div>
 
     <div class="round">
