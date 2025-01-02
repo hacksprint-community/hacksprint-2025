@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgent Notification</title>
+    <style>
+        /* Basic styles for the popup box */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .popup-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup-box.active {
+            display: block;
+        }
+
+        .popup-box h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .popup-box p {
+            margin: 0 0 20px;
+            color: #555;
+        }
+
+        .popup-box .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Popup Box -->
+    <div class="popup-box" id="popup-box">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <h2>Urgent Notification</h2>
+        <p>Round One submissions are starting soon. Submit your first round project idea right away!</p>
+    </div>
+
+    <script>
+        // Function to show the popup box
+        function showPopup() {
+            const popupBox = document.getElementById('popup-box');
+            popupBox.classList.add('active');
+        }
+
+        // Function to hide the popup box
+        function closePopup() {
+            const popupBox = document.getElementById('popup-box');
+            popupBox.classList.remove('active');
+        }
+
+        // Show the popup box when the page loads
+        window.onload = showPopup;
+
+        // Add event listener to the close button
+        document.getElementById('close-btn').addEventListener('click', closePopup);
+
+        // Optionally, hide the popup when clicking outside of it
+        window.addEventListener('click', function(event) {
+            const popupBox = document.getElementById('popup-box');
+            if (event.target === popupBox) {
+                closePopup();
+            }
+        });
+    </script>
+
+</body>
+</html>
