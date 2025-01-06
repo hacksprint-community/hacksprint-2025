@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants Ranking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            overflow-x: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Participants Ranking</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team Name</th>
+                    <th>Email ID</th>
+                    <th>Project Title</th>
+                    <th>Theme</th>
+                    <th>Innovation (5)</th>
+                    <th>Functionality (5)</th>
+                    <th>Relevance (5)</th>
+                    <th>UX & Design (5)</th>
+                    <th>Docs (5)</th>
+                    <th>Judge 1</th>
+                    <th>Judge 2</th>
+                    <th>Judge 3</th>
+                    <th>Final Score</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Innovators Hub</td>
+                    <td>innovators@example.com</td>
+                    <td>Smart City Solutions</td>
+                    <td>Urban Development</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>24.5</td>
+                    <td>25.0</td>
+                    <td>24.0</td>
+                    <td>24.5</td>
+                    <td>Excellent innovation and execution.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tech Titans</td>
+                    <td>titans@example.com</td>
+                    <td>AI for Health Monitoring</td>
+                    <td>Healthcare Innovation</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>23.0</td>
+                    <td>24.5</td>
+                    <td>24.0</td>
+                    <td>23.8</td>
+                    <td>Great functionality and relevance.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Code Warriors</td>
+                    <td>warriors@example.com</td>
+                    <td>Gamified Learning App</td>
+                    <td>Education</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>23.0</td>
+                    <td>23.5</td>
+                    <td>23.0</td>
+                    <td>23.2</td>
+                    <td>Strong user design, slightly weaker docs.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Visionaries</td>
+                    <td>vision@example.com</td>
+                    <td>Climate Change Dashboard</td>
+                    <td>Sustainability</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>22.5</td>
+                    <td>22.0</td>
+                    <td>23.5</td>
+                    <td>22.7</td>
+                    <td>Well-rounded with good documentation.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Future Coders</td>
+                    <td>futurecoders@example.com</td>
+                    <td>Remote Team Collaboration Tools</td>
+                    <td>Productivity Tools</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>22.0</td>
+                    <td>23.0</td>
+                    <td>22.5</td>
+                    <td>22.5</td>
+                    <td>Functional but minor design issues.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Green Innovators</td>
+                    <td>green@example.com</td>
+                    <td>Smart Waste Management</td>
+                    <td>Environment</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>21.0</td>
+                    <td>22.5</td>
+                    <td>23.0</td>
+                    <td>22.2</td>
+                    <td>Innovative but less user-friendly.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Code Pioneers</td>
+                    <td>pioneers@example.com</td>
+                    <td>Blockchain Voting System</td>
+                    <td>Governance</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>21.5</td>
+                    <td>22.0</td>
+                    <td>21.5</td>
+                    <td>21.7</td>
+                    <td>Highly functional but complex UX.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Spark Squad</td>
+                    <td>sparks@example.com</td>
+                    <td>Digital Mental Health Companion</td>
+                    <td>Mental Health</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>20.5</td>
+                    <td>21.5</td>
+                    <td>22.0</td>
+                    <td>21.3</td>
+                    <td>Practical but not fully unique.</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Data Crusaders</td>
+                    <td>crusaders@example.com</td>
+                    <td>Predictive Analytics for SMEs</td>
+                    <td>Business Intelligence</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>21.0</td>
+                    <td>21.0</td>
+                    <td>20.5</td>
+                    <td>20.8</td>
+                    <td>Average documentation quality.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Bright Minds</td>
+                    <td>brightminds@example.com</td>
+                    <td>Automated Tutor for Kids</td>
+                    <td>Education</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>20.0</td>
+                    <td>20.5</td>
+                    <td>21.0</td>
+                    <td>20.5</td>
+                    <td>Strong theme alignment, weaker innovation.</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Alpha Hackers</td>
+                    <td>alpha@example.com</td>
+                    <td>Smart Parking System</td>
+                    <td>Urban Development</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>19.5</td>
+                    <td>20.5</td>
+                    <td>20.5</td>
+                    <td>20.2</td>
+                    <td>Reliable but lacks creativity.</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Tech Innovators</td>
+                    <td>techinn@example.com</td>
+                    <td>Water Conservation Tracker</td>
+                    <td>Sustainability</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>20.0</td>
+                    <td>19.5</td>
+                    <td>20.0</td>
+                    <td>19.8</td>
+                    <td>Decent execution, limited scalability.</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>NextGen Coders</td>
+                    <td>nextgen@example.com</td>
+                    <td>Job Matching AI</td>
+                    <td>Employment</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>19.5</td>
+                    <td>19.0</td>
+                    <td>20.0</td>
+                    <td>19.5</td>
+                    <td>Good UX but lacks documentation.</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Delta Developers</td>
+                    <td>delta@example.com</td>
+                    <td>Secure Cloud Sharing App</td>
+                    <td>Cybersecurity</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>19.0</td>
+                    <td>19.5</td>
+                    <td>19.0</td>
+                    <td>19.2</td>
+                    <td>Innovative but buggy execution.</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Dream Team</td>
+                    <td>dreamteam@example.com</td>
+                    <td>Financial Literacy Platform</td>
+                    <td>Finance</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>18.5</td>
+                    <td>18.5</td>
+                    <td>19.5</td>
+                    <td>18.8</td>
+                    <td>Decent, needs better design elements.</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Blue Horizons</td>
+                    <td>horizons@example.com</td>
+                    <td>Personalized Health Dashboard</td>
+                    <td>Healthcare Innovation</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>18.0</td>
+                    <td>19.0</td>
+                    <td>18.5</td>
+                    <td>18.5</td>
+                    <td>Functional, but lacks originality.</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Quantum Coders</td>
+                    <td>quantum@example.com</td>
+                    <td>Smart Inventory Management</td>
+                    <td>Retail</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>17.5</td>
+                    <td>18.5</td>
+                    <td>18.0</td>
+                    <td>18.0</td>
+                    <td>Limited creativity and weak design.</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Genius Minds</td>
+                    <td>genius@example.com</td>
+                    <td>AI-Driven Study Planner</td>
+                    <td>Education</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>17.0</td>
+                    <td>17.5</td>
+                    <td>18.0</td>
+                    <td>17.5</td>
+                    <td>Practical but repetitive idea.</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Dynamic Thinkers</td>
+                    <td>dynamic@example.com</td>
+                    <td>Renewable Energy Monitor</td>
+                    <td>Environment</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>16.5</td>
+                    <td>17.0</td>
+                    <td>17.5</td>
+                    <td>17.0</td>
+                    <td>Documentation needs improvement.</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Creative Coders</td>
+                    <td>creative@example.com</td>
+                    <td>Event Organizer Assistant</td>
+                    <td>Productivity Tools</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>16.0</td>
+                    <td>16.5</td>
+                    <td>16.0</td>
+                    <td>16.2</td>
+                    <td>Weak execution and basic concept.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
